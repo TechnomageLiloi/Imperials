@@ -19,6 +19,13 @@ class Tree
     {
         $manager = new Manager();
 
+        $manager->add(new Method('Imperials.Imperials.Collection', '\Liloi\Imperials\API\Imperials\Collection\Method::execute'));
+        $manager->add(new Method('Imperials.Imperials.Show', '\Liloi\Imperials\API\Imperials\Show\Method::execute'));
+        $manager->add(new Method('Imperials.Imperials.Edit', '\Liloi\Imperials\API\Imperials\Edit\Method::execute'));
+        $manager->add(new Method('Imperials.Imperials.Save', '\Liloi\Imperials\API\Imperials\Save\Method::execute'));
+        $manager->add(new Method('Imperials.Imperials.Create', '\Liloi\Imperials\API\Imperials\Create\Method::execute'));
+        $manager->add(new Method('Imperials.Imperials.Remove', '\Liloi\Imperials\API\Imperials\Remove\Method::execute'));
+
         self::$manager = $manager;
     }
 

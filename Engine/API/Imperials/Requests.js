@@ -1,10 +1,21 @@
 API.Imperials = {
+    getCollection: function ()
+    {
+        API.request('Imperials.Imperials.Collection', {
+
+        }, function (data) {
+            $('#page').html(data.render);
+        }, function () {
+
+        });
+    },
+
     show: function ()
     {
         API.request('Imperials.Imperials.Show', {
 
         }, function (data) {
-            $('#map').html(data.render);
+            $('#page').html(data.render);
         }, function () {
 
         });
@@ -47,7 +58,7 @@ API.Imperials = {
         API.request('Imperials.Imperials.Edit', {
             'key': key
         }, function (data) {
-            $('#map').html(data.render);
+            $('#page').html(data.render);
         }, function () {
 
         });

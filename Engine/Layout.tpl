@@ -36,7 +36,7 @@
             </tr>
         </table>
         <script>
-
+            API.Imperials.getCollection();
         </script>
     </body>
 </html>
