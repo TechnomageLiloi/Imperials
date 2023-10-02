@@ -1,3 +1,3 @@
-var Imperials = {
+var API = {
 
 };

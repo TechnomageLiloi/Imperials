@@ -14,6 +14,7 @@
         <link href="<?php echo ROOT_URL; ?>/Engine/Style.css" rel="stylesheet" />
 
         <script src="<?php echo ROOT_URL; ?>/Engine/API/Requests.js"></script>
+        <script src="<?php echo ROOT_URL; ?>/Engine/API/Imperials/Requests.js"></script>
 
         <title>Imperials</title>
     </head>
