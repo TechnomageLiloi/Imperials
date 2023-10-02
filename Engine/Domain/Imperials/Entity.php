@@ -28,4 +28,9 @@ class Entity extends AbstractEntity
     {
         Manager::save($this);
     }
+
+    public function getStatusTitle(): string
+    {
+        return Statuses::$list[$this->getStatus()];
+    }
 }

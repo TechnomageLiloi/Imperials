@@ -6,6 +6,7 @@
         <tr>
             <th>Title</th>
             <th>Status</th>
+            <th>Credits</th>
             <th>Actions</th>
         </tr>
         <?php foreach($collection as $entity): ?>
@@ -15,6 +16,9 @@
                 </td>
                 <td>
                     <?php echo $entity->getStatusTitle(); ?>
+                </td>
+                <td>
+                    <?php echo $entity->getCredits(); ?>
                 </td>
                 <td>
                     <a href="javascript:void(0)" class="butn" onclick="API.Imperials.show('<?php echo $entity->getKey(); ?>');">Show</a> &diams;

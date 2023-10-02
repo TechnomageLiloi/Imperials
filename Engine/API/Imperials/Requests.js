@@ -10,10 +10,10 @@ API.Imperials = {
         });
     },
 
-    show: function ()
+    show: function (key)
     {
         API.request('Imperials.Imperials.Show', {
-
+            'key': key
         }, function (data) {
             $('#page').html(data.render);
         }, function () {
@@ -31,7 +31,7 @@ API.Imperials = {
         API.request('Imperials.Imperials.Create', {
             'debug': true
         }, function (data) {
-            API.Imperials.show();
+            API.Imperials.getCollection();
         }, function () {
 
         });
@@ -47,7 +47,7 @@ API.Imperials = {
         API.request('Imperials.Imperials.Remove', {
             'key': key
         }, function (data) {
-            API.Imperials.show();
+            API.Imperials.getCollection();
         }, function () {
 
         });
@@ -79,7 +79,7 @@ API.Imperials = {
             'program': jq_block.find('[name="program"]').val(),
             'credits': jq_block.find('[name="credits"]').val()
         }, function (data) {
-            API.Imperials.show();
+            API.Imperials.getCollection();
         }, function () {
 
         });

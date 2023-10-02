@@ -30,18 +30,12 @@
 </style>
 
 <table id="table-road">
-
-    <?php foreach($group as $key_dt => $collection): ?>
-        <?php foreach($collection as $entity): ?>
-            <tr>
-                <td>
-                    <?php echo $entity->getTitle(); ?>
-                </td>
-                <td style="text-align: right;">
-                    <a href="javascript:void(0)" onclick="API.Imperials.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
-                    <a href="javascript:void(0)" onclick="API.Imperials.remove('<?php echo $entity->getKey(); ?>');">Remove</a>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-    <?php endforeach; ?>
+    <tr>
+        <td>
+            <?php echo $entity->getTitle(); ?>
+        </td>
+        <td style="text-align: right;">
+            <a href="javascript:void(0)" onclick="API.Imperials.edit('<?php echo $entity->getKey(); ?>');">Edit</a> &diams;
+        </td>
+    </tr>
 </table>
